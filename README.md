@@ -8,5 +8,5 @@
 ## Installation
 
 ```
-Install-Package Soenneker.MemoryStream.ManualClose
+dotnet add package Soenneker.MemoryStream.ManualClose
 ```
