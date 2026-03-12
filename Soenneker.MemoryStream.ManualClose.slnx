@@ -4,10 +4,11 @@
   </Folder>
   <Folder Name="/.github/workflows/">
     <File Path=".github/workflows/build-and-test.yml" />
+    <File Path=".github/workflows/codeql.yml" />
     <File Path=".github/workflows/publish-package.yml" />
   </Folder>
   <Folder Name="/src/">
-    <Project Path="src/Soenneker.MemoryStream.ManualClose.csproj" />
+    <Project Path="src/Soenneker.MemoryStream.ManualClose/Soenneker.MemoryStream.ManualClose.csproj" />
   </Folder>
   <Folder Name="/test/">
     <Project Path="test/Soenneker.MemoryStream.ManualClose.Tests/Soenneker.MemoryStream.ManualClose.Tests.csproj" />
