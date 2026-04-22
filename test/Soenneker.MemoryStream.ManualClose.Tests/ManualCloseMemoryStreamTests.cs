@@ -1,16 +1,15 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.MemoryStream.ManualClose.Tests;
 
-[Collection("Collection")]
-public class ManualCloseMemoryStreamTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class ManualCloseMemoryStreamTests : HostedUnitTest
 {
-    public ManualCloseMemoryStreamTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public ManualCloseMemoryStreamTests(Host host) : base(host)
     {
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
