@@ -38,7 +38,7 @@ jobs:
         run: dotnet build test/Soenneker.MemoryStream.ManualClose.Tests/Soenneker.MemoryStream.ManualClose.Tests.csproj --configuration Release --no-restore --verbosity minimal
 
       - name: Test
-        run: dotnet test test/Soenneker.MemoryStream.ManualClose.Tests/Soenneker.MemoryStream.ManualClose.Tests.csproj --configuration Release --no-build --no-restore --verbosity minimal
+        run: dotnet test --project test/Soenneker.MemoryStream.ManualClose.Tests/Soenneker.MemoryStream.ManualClose.Tests.csproj --configuration Release --no-build --no-restore --verbosity minimal
 
       - name: Pack
         run: dotnet pack src/Soenneker.MemoryStream.ManualClose/Soenneker.MemoryStream.ManualClose.csproj --configuration Release --no-build --no-restore --output . --verbosity minimal
