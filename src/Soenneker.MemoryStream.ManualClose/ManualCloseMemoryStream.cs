@@ -16,6 +16,9 @@ public class ManualCloseMemoryStream : System.IO.MemoryStream
     /// </summary>
     public bool AllowClose { get; set; }
 
+    /// <summary>
+    /// Executes the close operation.
+    /// </summary>
     public override void Close()
     {
         if (AllowClose)
