@@ -1,8 +1,7 @@
 ﻿namespace Soenneker.MemoryStream.ManualClose;
 
 /// <summary>
-/// A derivation of MemoryStream that blocks automatic closing <para/>
-/// Make sure to set AllowClose = true after you're done or this will not dispose!
+/// A memory stream whose close operation can be temporarily suppressed.
 /// </summary>
 public class ManualCloseMemoryStream : System.IO.MemoryStream
 {
@@ -12,7 +11,7 @@ public class ManualCloseMemoryStream : System.IO.MemoryStream
     }
 
     /// <summary>
-    /// Should be set to true once the stream is ready to be disposed.
+    /// Gets or sets whether calls to <see cref="Close"/> may close the stream. The default is <see langword="true"/>.
     /// </summary>
     public bool AllowClose { get; set; }
 
